@@ -80,33 +80,17 @@ legend {
   display: block;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  background: linear-gradient(top, rgb(255 255 255 / 0%) 0%, rgb(0 174 255 / 4%) 50%, rgb(255 255 255 / 0%) 51%, rgb(0 174 255 / 3%) 100%);
-  border-bottom: 1px solid var(--dark-300);
-  box-shadow: 0 0 0 1000px var(--dark-500) inset;
-
-  transition: background-color 5000s ease-in-out 0s;
-
-  -webkit-text-fill-color: var(--light-100);
-}
-
-
 body {
   overflow-x: hidden;
 
   width: 100vw;
   min-height: 100vh;
 
-  font: var(--font-regular-l);
+  font-family: var(--font-family-main), sans-serif;
+  line-height: var(--line-height-m);
+  color: var(--color-light-100);
 
-  background-color: var(--dark-900);
+  background-color: var(--color-dark-900);
+
+  // background-color: var(---color-light-100);
 }
