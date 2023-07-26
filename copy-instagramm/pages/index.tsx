@@ -1,17 +1,19 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
-import styles from '@/styles/Home.module.css'
+import s from '@/styles/Home.module.css'
+import { getLayout } from '@/widgets/Layout/layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+function Home() {
   return (
-    <>
-      <div className={styles.center}>
+    <div className={s.container}>
+      <div className={s.center}>
         <Image
-          className={styles.logo}
+          className={s.logo}
           src="/next.svg"
           alt="Next.js Logo"
           width={180}
@@ -19,6 +21,12 @@ export default function Home() {
           priority
         />
       </div>
-    </>
+      <div className={s.navigation}>
+        <Link href={`/register`}>registration → </Link>
+        <Link href={`/login`}>login → </Link>
+      </div>
+    </div>
   )
 }
+Home.getLayout = getLayout
+export default Home
