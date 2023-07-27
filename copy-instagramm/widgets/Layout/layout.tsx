@@ -18,14 +18,6 @@ export const Layout: NextPage<PropsWithChildren> = props => {
       <div className={s.contentContainer}>
         <div className={s.contentWrapper}>{children}</div>
       </div>
-      <div className={s.navigation}>
-        <Link href={`/registration`}>
-          <h2>registration →</h2>
-        </Link>
-        <Link href={`/login`}>
-          <h2>login →</h2>
-        </Link>
-      </div>
     </div>
   )
 }

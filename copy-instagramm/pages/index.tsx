@@ -22,7 +22,7 @@ function Home() {
         />
       </div>
       <div className={s.navigation}>
-        <Link href={`/register`}>registration → </Link>
+        <Link href={`/registration`}>registration → </Link>
         <Link href={`/login`}>login → </Link>
       </div>
     </div>
